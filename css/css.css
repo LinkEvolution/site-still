@@ -23,7 +23,7 @@ html, body {
     align-items: center;
     position: relative;
     background-size: cover;
-    background: url('./pexels-kaique-rocha-97906.jpg') scroll center center no-repeat;
+    background: url('../img/pexels-kaique-rocha-97906.jpg') scroll center center no-repeat;
 }
 
 
