@@ -20,32 +20,40 @@ html, body {
 .header-services {
     height: 100%;
     display: flex;
-    align-items: center;
     position: relative;
-    background-size: cover;
+    align-items: center;
     background: url('../img/pexels-kaique-rocha-97906.jpg') scroll center center no-repeat;
+    background-size: cover;
 }
-
+  
+.wrapper-navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+}
 
 .navbar {
-    
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    outline: 1px white solid;
+    position: relative;
+    max-width: 1200px;
 }
 
-
-
+.navbar .right {
+    font-size: 1.3em;
+}
 
 .inner {
-    width: 80%;
+    color: #fff;
+    width: 100%;
     margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 10%;
     display: flex;
     z-index: 1;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-    font-size: 1.1em;
+    max-width: 1200px;
 }
 
 .bg {
@@ -81,7 +89,6 @@ html, body {
 
 @media screen and (max-width: 320px) {
     .block {
-        background: red;
         margin-top: -4em;
     }
 
@@ -110,19 +117,21 @@ html, body {
 }
 
 .slogan {
-    margin-top: 5%;
-    font-size: 600%;
+    font-size: 5em;
 }
 
 .midblock {
-    height: 200px;
+    left: 0;
     width: 100%;
-    background-color: rgba(192, 189, 189, 0.212);
-    margin-top: 25%;
-    display: flex;
-    flex-direction: row;
+    height: 200px;
+    bottom: 0;
     z-index: 3;
+    display: flex;
+    position: absolute;
+    margin-top: 25%;
+    flex-direction: row;
     justify-content: space-evenly;
+    background-color: rgba(192, 189, 189, 0.212);
 }
 
 .midblock-container {
@@ -139,12 +148,15 @@ html, body {
   
 }
 
+.red {
+    background-color: red;
+}
+
 .midblock-container-data {
     color: rgb(158, 158, 158);
     font-size: 80%;
     margin: 5% ;
-}
-
+}   
 .midblock-container-body {
    color: rgb(187, 187, 187);
 }
